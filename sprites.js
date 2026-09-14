@@ -1,0 +1,195 @@
+window.SPRITE_DATA = {
+  "image": "hamusubi_player.png",
+  "cell_size": [
+    128,
+    128
+  ],
+  "anchor": "bottom-center",
+  "animations": {
+    "idle": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 220
+      },
+      {
+        "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 220
+      },
+      {
+        "x": 256,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 220
+      },
+      {
+        "x": 384,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 220
+      }
+    ],
+    "walk": [
+      {
+        "x": 512,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      },
+      {
+        "x": 640,
+        "y": 0,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      },
+      {
+        "x": 0,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      },
+      {
+        "x": 128,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      },
+      {
+        "x": 256,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      },
+      {
+        "x": 384,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      }
+    ],
+    "jump": [
+      {
+        "x": 512,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      }
+    ],
+    "fall": [
+      {
+        "x": 640,
+        "y": 128,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 120
+      }
+    ],
+    "land": [
+      {
+        "x": 0,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 90
+      },
+      {
+        "x": 128,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 90
+      }
+    ],
+    "get": [
+      {
+        "x": 256,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 140
+      },
+      {
+        "x": 384,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 140
+      },
+      {
+        "x": 512,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 140
+      }
+    ],
+    "eat": [
+      {
+        "x": 640,
+        "y": 256,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 160
+      },
+      {
+        "x": 0,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 160
+      },
+      {
+        "x": 128,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 160
+      },
+      {
+        "x": 256,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 160
+      }
+    ],
+    "victory": [
+      {
+        "x": 384,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 180
+      },
+      {
+        "x": 512,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 180
+      },
+      {
+        "x": 640,
+        "y": 384,
+        "w": 128,
+        "h": 128,
+        "duration_ms": 180
+      }
+    ]
+  },
+  "note": "Left-facing movement should be produced by horizontal flip in the game engine."
+};

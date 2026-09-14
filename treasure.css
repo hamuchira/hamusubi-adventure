@@ -1,0 +1,39 @@
+#world-action{position:absolute;transform:translate(-50%,-100%);z-index:6;padding:7px 12px;border:2px solid #896436;background:#ffedb8;color:#563c29;font-size:13px;font-weight:bold;pointer-events:auto;white-space:nowrap}
+#home-keys{position:absolute;left:3%;top:40%;padding:4px 9px;background:#fff1cbe8;color:#67452c;border:1px solid #a7844b;font-weight:bold;font-size:12px;border-radius:4px}
+#bonus-enter{position:absolute;left:3%;top:73%;z-index:6;pointer-events:auto;background:#ffe39a;color:#634422;border:2px solid #9a753f;font-size:12px;padding:8px 12px}
+#treasure-help{z-index:48}#treasure-help-copy{white-space:pre-line;line-height:1.6}#treasure-help .paper{max-height:90%;overflow:auto}#treasure-help h2{font-size:22px}
+#best-notice{font-weight:bold;font-size:21px!important;color:#73572f;margin:8px 0!important}#best-notice.new-best{color:#9d601c;background:#ffecab;border:2px solid #d4ad5c;padding:7px;animation:bestGlow 1.2s ease-in-out infinite alternate}#clear-top3{font-size:12px;line-height:1.6;color:#735736}.bonus-record{font-size:13px;border-top:2px solid #b79964;padding-top:8px}
+@keyframes bestGlow{from{box-shadow:0 0 0 #ffe17a}to{box-shadow:0 0 16px #ffe17a}}
+#stage[data-scene="ending"] #home-screen>:not(#home-photos){display:none!important}#stage[data-scene="ending"] #home-photos{pointer-events:none}#stage[data-scene="ending"] .home-photo{pointer-events:none}
+.phone #world-action{font-size:11px;padding:6px 9px}.phone #home-keys{font-size:10px;top:41%;padding:3px 6px}.phone #bonus-enter{font-size:10px;padding:6px 8px}.phone #treasure-help h2{font-size:18px}.phone #treasure-help-copy{font-size:11px}.phone #best-notice{font-size:17px!important}.phone #clear-top3{font-size:10px}
+@media(prefers-reduced-motion:reduce){#best-notice.new-best{animation:none}}
+
+#depart-note{position:absolute;bottom:calc(100% + 8px);left:0;z-index:30;background:#4f3023;color:#fff3cd;border:3px solid #ffcc68;border-radius:7px;padding:10px 14px;font-size:17px;font-weight:bold;line-height:1.5;box-shadow:0 3px 10px #30201477;white-space:nowrap;pointer-events:none}#depart-note:after{content:'';position:absolute;left:45px;top:100%;border:8px solid transparent;border-top-color:#ffcc68}#message.milestone,.phone #message.milestone{top:29%;bottom:auto;font-size:clamp(16px,2.4vw,24px);line-height:1.45;white-space:pre-line;padding:10px 18px;min-height:0;width:max-content;max-width:80%;color:#fff8df;background:#453021f5;border:2px solid #ffd573;box-shadow:0 3px 12px #2c1c1466}#ending-choice{z-index:40}.phone #depart-note{font-size:13px;padding:7px 10px}
+
+/* Phone controller: translucent surfaces, thumb reach, context action beside jump. */
+.phone #touch{left:max(clamp(32px,5vw,64px),env(safe-area-inset-left));right:max(clamp(22px,3vw,42px),env(safe-area-inset-right));bottom:max(clamp(30px,8vh,48px),env(safe-area-inset-bottom));align-items:flex-end}
+.phone #touch .move-controls{gap:26px;align-items:flex-end}
+.phone #touch .action-controls{gap:12px;align-items:flex-end}
+.phone #touch button{opacity:1;background:rgba(42,37,30,.22);border:2px solid rgba(255,239,200,.58);color:rgba(255,249,222,.94);text-shadow:0 1px 3px #211d18;box-shadow:none;width:64px;height:58px;min-width:52px;min-height:48px}
+.phone #touch button:hover{background:rgba(42,37,30,.26)}
+.phone #touch button.pressed,.phone #touch button:active{background:rgba(112,91,54,.4);border-color:#fff0b7}
+.phone #touch [data-key="jump"]{width:82px;height:64px;font-size:16px}
+.phone #touch #touch-action{width:72px;height:54px;font-size:14px;margin-bottom:25px}
+.phone #touch #touch-action:disabled{opacity:.42;background:rgba(42,37,30,.12);cursor:default}
+@media(max-height:380px) and (orientation:landscape){.phone #touch button{width:56px;height:50px}.phone #touch [data-key="jump"]{width:72px;height:56px}.phone #touch #touch-action{width:64px;height:48px;font-size:12px;margin-bottom:19px}.phone #touch .action-controls{gap:9px}.phone #touch .move-controls{gap:24px}}
+.phone #touch #touch-action{white-space:nowrap;padding:4px 5px}
+
+/* Brief, readable notices that leave the course visible. */
+#message.stage-intro.start-notice,.phone #message.stage-intro.start-notice{top:28%;font-size:clamp(13px,1.8vw,18px);padding:7px 12px;line-height:1.4;max-width:72%;min-height:0;width:max-content}
+#message.milestone,.phone #message.milestone{font-size:clamp(13px,1.8vw,18px);padding:6px 12px;line-height:1.35;max-width:72%}
+#meal-choices{position:absolute;right:5%;bottom:23%;z-index:12;pointer-events:auto;width:205px;padding:8px;background:#fff0d6f5;border:2px solid #9b7547;border-radius:9px;color:#523724;text-align:center;box-shadow:0 3px 10px #33251555}#meal-choices button{display:block;width:100%;margin-top:6px;padding:7px 5px;background:#f5dc9f;color:#523724;border:1px solid #aa8655;font-size:13px;font-weight:bold}#meal-stock{font-size:12px}#meal-choices #meal-close{font-size:11px;padding:4px;background:transparent}.phone #meal-choices{right:max(22px,3vw);bottom:calc(clamp(30px,8vh,48px) + 85px);width:172px;padding:6px}.phone #meal-choices button{font-size:12px;min-height:34px;margin-top:5px}.phone #meal-stock{font-size:11px}
+
+#bgm-choice{position:absolute;left:3%;top:47%;z-index:6;pointer-events:auto;font-size:11px;padding:5px 8px;background:#fff0c9dc;color:#513626;border:1px solid #a7844b}.phone #bgm-choice{font-size:10px;padding:4px 7px}#stage[data-scene="ending"] #bgm-choice{display:none}
+
+/* Right thumb rests inward; action has a fixed separate upper-left slot. */
+.phone #touch .action-controls{position:relative;width:160px;height:76px;margin-right:clamp(30px,5vw,68px);display:block}
+.phone #touch [data-key="jump"]{position:absolute;right:0;bottom:0;width:76px;height:76px;min-width:76px;border-radius:50%;padding:0}
+.phone #touch #touch-action{position:absolute;right:88px;bottom:25px;margin:0;width:64px;height:50px;min-width:64px;font-size:12px}
+.phone #touch #touch-action:disabled{visibility:hidden;pointer-events:none}
+@media(max-height:380px) and (orientation:landscape){.phone #touch .action-controls{width:146px;height:64px}.phone #touch [data-key="jump"]{width:64px;height:64px;min-width:64px;min-height:64px}.phone #touch #touch-action{right:76px;bottom:19px;height:48px}}
+.move-controls{touch-action:none;user-select:none;-webkit-user-select:none}

@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "はむすび — 小さな足で、大きな冒険。",
+  "short_name": "はむすび",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#234a3b",
+  "background_color": "#234a3b",
+  "icons": [
+    {
+      "src": "assets/ui/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/ui/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

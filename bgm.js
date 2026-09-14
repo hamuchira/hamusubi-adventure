@@ -1,5 +1,7 @@
 // The supplied tracks are independent of the original synthesizer in game.js.
 (()=>{'use strict';
+// Fixed background level: sound effects never modulate this gain.
+const BGM_VOLUME=.12;
 const KEY='hamusubi.bgm.choice';let choice='new';// Original synthesizer remains available in source; player UI always uses supplied music.
 
 let ctx=null,master=null,current=null,wanted='',revision=0,failed=false;
@@ -8,6 +10,6 @@ function label(){const b=document.querySelector('#bgm-choice');if(b){b.textConte
 async function buffer(name){if(buffers.has(name))return buffers.get(name);if(!pending.has(name))pending.set(name,(async()=>{const res=await fetch(name.startsWith('assets/')?name:'assets/audio/'+name+'.mp3');if(!res.ok)throw Error('BGM load '+res.status);const data=await ctx.decodeAudioData(await res.arrayBuffer());buffers.set(name,data);return data})().finally(()=>pending.delete(name)));return pending.get(name)}
 function fadeOut(voice){if(!voice)return;const now=ctx.currentTime;voice.gain.gain.cancelScheduledValues(now);voice.gain.gain.setValueAtTime(voice.gain.gain.value,now);voice.gain.gain.linearRampToValueAtTime(0,now+.6);voice.source.stop(now+.65)}
 function update(mode,enabled=true,endingTime=0){if(!ctx)return;const home=['home','list','start','title'].includes(mode)||(mode==='ending'&&endingTime>=13);const target=enabled&&!document.hidden&&choice==='new'&&!failed?(home?'home':(window.EventSystem?.current?.bgm||'adventure')):'';if(target===wanted)return;wanted=target;const ticket=++revision;if(!target){fadeOut(current);current=null;return}buffer(target).then(data=>{if(ticket!==revision||wanted!==target)return;const source=ctx.createBufferSource(),gain=ctx.createGain();source.buffer=data;source.loop=true;source.connect(gain).connect(master);const now=ctx.currentTime;gain.gain.setValueAtTime(0,now);gain.gain.linearRampToValueAtTime(1,now+.6);source.onended=()=>{source.disconnect();gain.disconnect()};source.start(now);fadeOut(current);current={source,gain}}).catch(e=>{if(ticket!==revision)return;failed=true;wanted='';fadeOut(current);current=null;label();console.warn('BGM unavailable; original music retained.',e.message)})}
-window.HamusubiBGM={start(context){if(!ctx){ctx=context;master=ctx.createGain();master.gain.setValueAtTime(.45,ctx.currentTime);master.connect(ctx.destination)}},update,duck(seconds=.6){if(!master||choice==='original')return;const t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setTargetAtTime(.12,t,.035);master.gain.setTargetAtTime(.45,t+seconds,.18)},get original(){return choice==='original'||failed},toggle(){choice=choice==='new'?'original':'new';failed=false;try{localStorage.setItem(KEY,choice)}catch{}label()},label};
+window.HamusubiBGM={start(context){if(!ctx){ctx=context;master=ctx.createGain();master.gain.setValueAtTime(BGM_VOLUME,ctx.currentTime);master.connect(ctx.destination)}},update,duck(){/* Keep music steady during every sound effect, including jingles. */},get original(){return choice==='original'||failed},toggle(){choice=choice==='new'?'original':'new';failed=false;try{localStorage.setItem(KEY,choice)}catch{}label()},label};
 label();
 })();

@@ -5,7 +5,7 @@ window.ShelfShare={reset};
 $('#shelf-share').onclick=async()=>{
  reset();const token=request,ids=[...Journey.progress.favorites],url=location.href.split(/[?#]/)[0];
  const copy='はむすび🍙で遊んでるよ！\n推しケツ'+ids.length+'選をおうちに飾ったよ🐹\n#はむチラ #ハムスター';
- $('#share-title').textContent='推しケツ棚を シェア';$('#share-x').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(copy)+'&url='+encodeURIComponent(url);$('#share-line').href='https://line.me/R/msg/text/?'+encodeURIComponent(copy+'\n'+url);$('#share-status').textContent='棚の画像を じゅんび中…';$('#share-panel').hidden=false;$('#share-close').focus();
+ $('#share-title').textContent='推しケツ棚を シェア';$('#share-x').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(I18n.t(copy))+'&url='+encodeURIComponent(url);$('#share-line').href='https://line.me/R/msg/text/?'+encodeURIComponent(I18n.t(copy)+'\n'+url);$('#share-status').textContent='棚の画像を じゅんび中…';$('#share-panel').hidden=false;$('#share-close').focus();
  try{const art=new Image();art.src='assets/home.png';const photos=ids.map(id=>{const c=HAMUKETSU.find(c=>c.collection_id===id),img=new Image();img.src='assets/hamuketsu/'+c.butt_file;return {c,img}});await Promise.all([art.decode(),...photos.map(p=>p.img.decode())]);if(token!==request)return;
  const out=document.createElement('canvas');out.width=1280;out.height=720;const ctx=out.getContext('2d');ctx.fillStyle='#fff2cf';ctx.fillRect(0,0,1280,720);ctx.imageSmoothingEnabled=false;ctx.drawImage(art,0,0,art.width,art.height*.35,0,125,1280,252);
  ctx.save();ctx.translate(0,125);ctx.scale(1280/960,252/(540*.35));for(let n=0;n<10;n++)window.Customize?.shelf(ctx,164+n%5*139,n<5?58:133,106,Missions.data.selected.shelf);ctx.restore();
@@ -15,5 +15,5 @@ $('#shelf-share').onclick=async()=>{
  const blob=await new Promise((resolve,reject)=>out.toBlob(b=>b?resolve(b):reject(Error('image')),'image/png'));if(token!==request)return;objectURL=URL.createObjectURL(blob);file=new File([blob],'hamusubi-oshi-shelf.png',{type:'image/png'});$('#shelf-image').src=objectURL;$('#shelf-download').href=objectURL;$('#shelf-preview').hidden=false;$('#shelf-native').hidden=!navigator.canShare?.({files:[file]});$('#share-status').textContent='いまの棚を画像にしたよ！';
  }catch{if(token===request)$('#share-status').textContent='画像を作れませんでした。URLと文章は共有できます。'}
 };
-$('#shelf-native').onclick=async()=>{if(!file)return;try{await navigator.share({files:[file],title:'はむすびの推しケツ棚',text:'はむすび🍙で遊んでるよ！ #はむチラ #ハムスター'});$('#share-status').textContent='共有したよ！'}catch(e){$('#share-status').textContent=e.name==='AbortError'?'共有をとじたよ。':'画像を保存して、好きなアプリで共有してね。'}};
+$('#shelf-native').onclick=async()=>{if(!file)return;try{await navigator.share({files:[file],title:I18n.t('はむすびの推しケツ棚'),text:I18n.t('はむすび🍙で遊んでるよ！ #はむチラ #ハムスター')});$('#share-status').textContent='共有したよ！'}catch(e){$('#share-status').textContent=e.name==='AbortError'?'共有をとじたよ。':'画像を保存して、好きなアプリで共有してね。'}};
 })();

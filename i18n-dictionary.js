@@ -1942,6 +1942,197 @@ window.HAMUSUBI_TRANSLATIONS = {
   },
   "たびの おみやげを みつけた！ ": {
     "en": "Souvenir found! ",
-    "fr": "Souvenir trouvé !"
+    "fr": "Souvenir trouvé ! "
+  },
+  "2026 お月見イベント": {
+    "en": "Moon Festival 2026",
+    "fr": "Fête de la lune 2026"
+  },
+  "月夜のすすき野": {
+    "en": "Moonlit Silvergrass",
+    "fr": "Herbes au clair de lune"
+  },
+  "お月さまへの道": {
+    "en": "The Path to the Moon",
+    "fr": "Le chemin de la lune"
+  },
+  "はむすび、月面着陸": {
+    "en": "Hamusubi Lands on the Moon",
+    "fr": "Hamusubi sur la Lune"
+  },
+  "お月さままで、おでかけ。": {
+    "en": "An adventure to the moon.",
+    "fr": "Une aventure jusqu’à la lune."
+  },
+  "はむすびを10こ以上集めてゴール！": {
+    "en": "Collect 10 Hamusubi to reach the goal!",
+    "fr": "Ramassez 10 Hamusubi pour terminer !"
+  },
+  "お月見 推しケツ棚": {
+    "en": "Moon Festival Shelf",
+    "fr": "Étagère de la lune"
+  },
+  "月あかりの回し車": {
+    "en": "Moonlight Wheel",
+    "fr": "Roue du clair de lune"
+  },
+  "お月見 ごはん皿": {
+    "en": "Moon Festival Food Bowl",
+    "fr": "Gamelle de la lune"
+  },
+  "お月見ハウス（三日月ハウス）": {
+    "en": "Crescent Moon House",
+    "fr": "Maison croissant de lune"
+  },
+  "NORMALの全3ステージクリアでHARD解放": {
+    "en": "Clear all 3 NORMAL stages to unlock HARD.",
+    "fr": "Terminez les 3 niveaux NORMAL pour débloquer HARD."
+  },
+  "NORMALの全3ステージをクリア": {
+    "en": "Clear all 3 NORMAL stages",
+    "fr": "Terminer les 3 niveaux NORMAL"
+  },
+  "イベントでベストスコア9,000点以上": {
+    "en": "Score 9,000 points in an event stage",
+    "fr": "Atteindre 9 000 points dans un niveau de l’événement"
+  },
+  "開催期間中に虹のはむすびを3個獲得（通常ステージも対象）": {
+    "en": "Collect 3 rainbow Hamusubi during the event (normal stages count too)",
+    "fr": "Ramasser 3 Hamusubi arc-en-ciel pendant l’événement (niveaux classiques inclus)"
+  },
+  "3つのイベントミッションを達成": {
+    "en": "Complete all 3 event missions",
+    "fr": "Terminer les 3 missions de l’événement"
+  },
+  "はむケツマイスター": {
+    "en": "Hamster Cheeks Expert",
+    "fr": "Expert des petits derrières"
+  },
+  "おでかけマスター": {
+    "en": "Adventure Master",
+    "fr": "Maître des aventures"
+  },
+  "おしゃれフリーク": {
+    "en": "Style Enthusiast",
+    "fr": "Passionné de style"
+  },
+  "ハウジングラバー": {
+    "en": "Home Decor Lover",
+    "fr": "Passionné de décoration"
+  },
+  "月見をたのしむはむ": {
+    "en": "Moonwatcher",
+    "fr": "Contemplateur de lune"
+  },
+  "空をかけるはむ": {
+    "en": "Skybound Hamster",
+    "fr": "Hamster des cieux"
+  },
+  "月まで行ったはむ": {
+    "en": "Lunar Explorer",
+    "fr": "Explorateur lunaire"
+  },
+  "お月見マスター2026": {
+    "en": "Moon Festival Master 2026",
+    "fr": "Maître de la lune 2026"
+  },
+  "ハムケツを30個獲得": {
+    "en": "Collect 30 hamster cheeks",
+    "fr": "Collectionner 30 petits derrières"
+  },
+  "通常ステージをすべてクリア": {
+    "en": "Clear all normal stages",
+    "fr": "Terminer tous les niveaux classiques"
+  },
+  "毛色を5回変更": {
+    "en": "Change coat color 5 times",
+    "fr": "Changer de pelage 5 fois"
+  },
+  "家具を5回入れ替える": {
+    "en": "Change furniture 5 times",
+    "fr": "Changer de meuble 5 fois"
+  },
+  "HARDをすべてクリア": {
+    "en": "Clear all HARD stages",
+    "fr": "Terminer tous les niveaux HARD"
+  },
+  "称号をつけない": {
+    "en": "No title",
+    "fr": "Aucun titre"
+  },
+  "称号一覧": {
+    "en": "Titles",
+    "fr": "Titres"
+  },
+  "装備する": {
+    "en": "Equip",
+    "fr": "Équiper"
+  },
+  "たびのきろくにもどる": {
+    "en": "Back to travel log",
+    "fr": "Retour au carnet"
+  },
+  "たびのきろくをシェア": {
+    "en": "Share travel log",
+    "fr": "Partager le carnet"
+  },
+  "ごはん皿": {
+    "en": "Food bowl",
+    "fr": "Gamelle"
+  },
+  "いつものごはん皿": {
+    "en": "Classic food bowl",
+    "fr": "Gamelle classique"
+  },
+  "開催中！": {
+    "en": "Now live!",
+    "fr": "En cours !"
   }
 };
+
+Object.assign(window.HAMUSUBI_TRANSLATIONS,{
+  "イベント": {
+    "en": "Event",
+    "fr": "Événement"
+  },
+  "イベントのきろく": {
+    "en": "Event records",
+    "fr": "Historique des événements"
+  },
+  "称号　－－": {
+    "en": "Title —",
+    "fr": "Titre —"
+  },
+  "最高はむすび": {
+    "en": "Most Hamusubi",
+    "fr": "Hamusubi max."
+  },
+  "ベストスコア": {
+    "en": "Best score",
+    "fr": "Meilleur score"
+  },
+  "クリア回数": {
+    "en": "Clears",
+    "fr": "Victoires"
+  },
+  "未取得報酬": {
+    "en": "Locked reward",
+    "fr": "Récompense verrouillée"
+  },
+  "🔒 未取得": {
+    "en": "🔒 Locked",
+    "fr": "🔒 Verrouillé"
+  },
+  "NORMAL 1をクリアで解放": {
+    "en": "Clear NORMAL 1 to unlock",
+    "fr": "Terminez NORMAL 1 pour débloquer"
+  },
+  "NORMAL 2をクリアで解放": {
+    "en": "Clear NORMAL 2 to unlock",
+    "fr": "Terminez NORMAL 2 pour débloquer"
+  },
+  "NORMAL 3をクリアで解放": {
+    "en": "Clear NORMAL 3 to unlock",
+    "fr": "Terminez NORMAL 3 pour débloquer"
+  }
+});

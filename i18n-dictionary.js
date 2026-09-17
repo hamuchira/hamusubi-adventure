@@ -1996,9 +1996,9 @@ window.HAMUSUBI_TRANSLATIONS = {
     "en": "Score 9,000 points in an event stage",
     "fr": "Atteindre 9 000 points dans un niveau de l’événement"
   },
-  "開催期間中に虹のはむすびを3個獲得（通常ステージも対象）": {
-    "en": "Collect 3 rainbow Hamusubi during the event (normal stages count too)",
-    "fr": "Ramasser 3 Hamusubi arc-en-ciel pendant l’événement (niveaux classiques inclus)"
+  "開催期間中に虹のはむすびを1個獲得、またはイベントステージを累計50回クリア（NORMAL・HARD共通）": {
+    "en": "Collect 1 rainbow Hamusubi during the event OR clear 50 event stages (NORMAL and HARD combined)",
+    "fr": "Obtenir 1 Hamusubi arc-en-ciel pendant l’événement OU terminer 50 niveaux de l’événement (NORMAL et HARD cumulés)"
   },
   "3つのイベントミッションを達成": {
     "en": "Complete all 3 event missions",

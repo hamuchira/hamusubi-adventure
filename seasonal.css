@@ -50,3 +50,13 @@
 .moon-greeting p{position:absolute;right:103px;top:7px;margin:0;min-width:108px;padding:10px 8px;font-size:11px}.moon-greeting p::after{content:'';position:absolute;right:-9px;top:55%;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:13px solid #fff6ec;transform:rotate(12deg)}
 .moon-rice-count{display:inline-flex;align-items:center;gap:4px}.moon-rice-icon{width:18px;height:18px;flex:none}
 @media(max-height:480px){.moon-greeting p{right:77px;top:4px;min-width:86px;font-size:9px;padding:8px 5px}}
+
+/* Furniture selection only: no global button overrides. */
+#upgrade-body .design-grid button,#upgrade-body .housing-categories button{position:relative}
+#upgrade-body .design-grid button[data-custom-id]{border:2px solid #b3986d;padding-top:28px}
+#upgrade-body .design-grid button.chosen,#upgrade-body .design-grid button.chosen:hover,#upgrade-body .design-grid button.chosen:active{background:#ffe2eb;border:2px solid #d74d7b;box-shadow:inset 0 0 0 2px #fff5f8;color:#513723}
+.custom-equipped-badge{position:absolute;left:6px;top:5px;background:#c93f70;color:#fff;border-radius:7px;padding:3px 9px;font-size:12px;line-height:1.3;z-index:2;box-shadow:0 1px 2px #77334733}.custom-equipped-badge[hidden]{display:none}
+.custom-new-badge{position:absolute;right:6px;top:5px;display:grid;place-items:center;width:23px;height:23px;border:2px solid #fff6df;border-radius:50%;background:#d55332;color:white;font:bold 17px sans-serif;z-index:3;box-shadow:0 1px 3px #7b332755}
+#upgrade-body .design-grid button[data-custom-id].chosen,#upgrade-body .design-grid button[data-custom-id].chosen:hover,#upgrade-body .design-grid button[data-custom-id].chosen:active{background:#ffe2eb;color:#513723;border-color:#d74d7b}#upgrade-body .design-grid button[data-custom-id].chosen>small{visibility:hidden}
+
+#records.has-title-news,#equipped-title.has-title-news{position:relative}#records.has-title-news::after,#equipped-title.has-title-news::after{content:'!';position:absolute;right:5px;top:3px;background:#d44d51;color:#fff;border:2px solid #fff4df;border-radius:50%;width:19px;height:19px;line-height:19px;text-align:center;font-size:14px;font-weight:bold;pointer-events:none}#equipped-title.has-title-news{padding-right:32px}.title-item.title-new{border:2px solid #df8c9d;background:#fff0e9}.title-new-label{background:#cd4871;color:white;border-radius:6px;padding:4px 6px;font-size:11px;flex-shrink:0}

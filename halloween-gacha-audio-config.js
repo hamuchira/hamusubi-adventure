@@ -1,6 +1,6 @@
 // Audio-only settings: video times are seconds in each original source clip.
 window.HALLOWEEN_GACHA_AUDIO_CONFIG={
- bgm:'assets/events/halloween2026/audio/gacha-bgm.wav',bgmVolume:.12,seVolume:.55,
+ bgm:'assets/events/halloween2026/audio/gacha-bgm.mp3',bgmVolume:.12,seVolume:.55,
  effects:{
   operation:{file:'assets/events/halloween2026/audio/operation.wav',volume:.75},
   capsule:{file:'assets/events/halloween2026/audio/capsule.wav',volume:1},

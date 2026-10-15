@@ -1,0 +1,4 @@
+.hw-missions{margin:18px 0;padding:16px;background:#fff0dc;border:2px solid #c99a63;border-radius:18px;color:#533443}.hw-missions h3{margin:0 0 12px}.hw-mission{display:grid;grid-template-columns:1fr auto auto;gap:14px;padding:12px 0;border-top:1px solid #d8bed6;font-size:14px}.hw-mission.complete{color:#713476}.hw-mission small{color:#69432b}
+#home-screen #halloween-home-gacha{position:absolute;top:37%;right:9%;z-index:13;pointer-events:auto;background:linear-gradient(110deg,#ffe1a5,#ead0ff);color:#503049;border:1px solid #a37c54;border-radius:12px;padding:6px 12px;font-size:clamp(10px,1.2vw,14px);box-shadow:0 2px 3px #55304433}
+#home-screen #halloween-home-gacha:hover{background:#ffe6bc;color:#503049}#home-screen #halloween-home-gacha:focus-visible{outline:3px solid #b86aab;outline-offset:2px}
+@media(max-width:600px){.hw-mission{grid-template-columns:1fr auto;gap:6px}.hw-mission strong{grid-column:1/-1}}

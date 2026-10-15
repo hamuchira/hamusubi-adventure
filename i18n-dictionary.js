@@ -2136,3 +2136,171 @@ Object.assign(window.HAMUSUBI_TRANSLATIONS,{
     "fr": "Terminez NORMAL 3 pour débloquer"
   }
 });
+
+Object.assign(window.HAMUSUBI_TRANSLATIONS,{
+  "床置き家具": {
+    "en": "Floor decor",
+    "fr": "Décoration au sol"
+  },
+  "床置き家具をえらぶ": {
+    "en": "Choose floor decor",
+    "fr": "Choisir une décoration au sol"
+  },
+  "なし": {
+    "en": "None",
+    "fr": "Aucune"
+  },
+  "ガチャで獲得した床置き家具を、1つ飾れます。": {
+    "en": "Display one floor decoration you have won in the gacha.",
+    "fr": "Exposez une décoration au sol obtenue au gacha."
+  },
+  "ハロウィン回し車": {
+    "en": "Halloween Wheel",
+    "fr": "Roue d’Halloween"
+  },
+  "おばけのごはん皿": {
+    "en": "Ghost Food Bowl",
+    "fr": "Gamelle fantôme"
+  },
+  "ハロウィン推しケツ棚": {
+    "en": "Halloween Display Shelf",
+    "fr": "Étagère d’Halloween"
+  },
+  "魔女のほうき": {
+    "en": "Witch’s Broom",
+    "fr": "Balai de sorcière"
+  },
+  "おばけランタン": {
+    "en": "Ghost Lantern",
+    "fr": "Lanterne fantôme"
+  },
+  "キャンディバスケット": {
+    "en": "Candy Basket",
+    "fr": "Panier de bonbons"
+  },
+  "魔法の大釜": {
+    "en": "Magic Cauldron",
+    "fr": "Chaudron magique"
+  }
+});
+
+Object.assign(window.HAMUSUBI_TRANSLATIONS,{'いつもの丸太トンネル':{en:'Classic Log Tunnel',fr:'Tunnel en bois classique'},'丸太トンネルの場所に、獲得した家具を1つ置けます。':{en:'Replace the log tunnel with one furniture prize you own.',fr:'Remplacez le tunnel par un meuble obtenu.'}});
+
+Object.assign(window.HAMUSUBI_TRANSLATIONS,{
+  "🎃 ハロウィンイベント": {
+    "en": "🎃 Halloween Event",
+    "fr": "🎃 Événement Halloween"
+  },
+  "ハロウィン家具ガチャ": {
+    "en": "Halloween Furniture Gacha",
+    "fr": "Gacha de meubles Halloween"
+  },
+  "おばけとかぼちゃの、かわいい家具を集めよう。": {
+    "en": "Collect charming ghost and pumpkin furniture.",
+    "fr": "Collectionnez des meubles fantômes et citrouilles."
+  },
+  "ガチャへ": {
+    "en": "Go to Gacha",
+    "fr": "Ouvrir le gacha"
+  },
+  "ガチャ券": {
+    "en": "Gacha tickets",
+    "fr": "Tickets gacha"
+  },
+  "ダブりのかけら": {
+    "en": "Duplicate shards",
+    "fr": "Fragments de doublons"
+  },
+  "ガチャ券1枚で1回まわせます。": {
+    "en": "One ticket per draw.",
+    "fr": "Un ticket par tirage."
+  },
+  "1回まわす": {
+    "en": "Draw once",
+    "fr": "Faire un tirage"
+  },
+  "全10種類。景品と獲得状況を下で確認できます。": {
+    "en": "10 prizes. See your collection below.",
+    "fr": "10 récompenses. Votre collection est ci-dessous."
+  },
+  "ガチャ券がありません。": {
+    "en": "No gacha tickets.",
+    "fr": "Vous n’avez plus de tickets."
+  },
+  "景品一覧": {
+    "en": "Prize collection",
+    "fr": "Récompenses"
+  },
+  "獲得済み": {
+    "en": "Owned",
+    "fr": "Obtenu"
+  },
+  "未獲得": {
+    "en": "Not owned",
+    "fr": "Non obtenu"
+  },
+  "保存済みの獲得結果です。": {
+    "en": "Your saved draw result.",
+    "fr": "Résultat de votre tirage sauvegardé."
+  },
+  "ハロウィンのガチャ演出": {
+    "en": "Halloween gacha animation",
+    "fr": "Animation du gacha Halloween"
+  },
+  "演出をスキップ": {
+    "en": "Skip animation",
+    "fr": "Passer l’animation"
+  },
+  "前の獲得結果を確認してください。": {
+    "en": "View your previous result first.",
+    "fr": "Consultez d’abord le résultat précédent."
+  },
+  "保存できませんでした。ガチャ券は消費していません。": {
+    "en": "Could not save. No ticket was spent.",
+    "fr": "Sauvegarde impossible. Aucun ticket dépensé."
+  },
+  "ハムスターがガチャを動かしています…": {
+    "en": "The hamster is powering the machine…",
+    "fr": "Le hamster fait tourner la machine…"
+  },
+  "カプセルが開きます…": {
+    "en": "The capsule is opening…",
+    "fr": "La capsule s’ouvre…"
+  },
+  "動画を再生できなかったため、保存済みの景品を表示しました。": {
+    "en": "Video unavailable. Here is your saved prize.",
+    "fr": "Vidéo indisponible. Voici votre récompense sauvegardée."
+  },
+  "景品を獲得しました！": {
+    "en": "You won a prize!",
+    "fr": "Vous avez obtenu une récompense !"
+  },
+  "ダブり！ かけら +1": {
+    "en": "Duplicate! Shards +1",
+    "fr": "Doublon ! Fragment +1"
+  },
+  "もう1回": {
+    "en": "Draw again",
+    "fr": "Encore un tirage"
+  },
+  "ガチャをおわる": {
+    "en": "Finish",
+    "fr": "Terminer"
+  },
+  "確認状態を保存できませんでした。もう一度お試しください。": {
+    "en": "Could not save confirmation. Please try again.",
+    "fr": "Confirmation non sauvegardée. Réessayez."
+  },
+  "かぼちゃハウス": {
+    "en": "Pumpkin House",
+    "fr": "Maison citrouille"
+  },
+  "おばけハウス": {
+    "en": "Ghost House",
+    "fr": "Maison fantôme"
+  },
+  "魔女帽子ハウス": {
+    "en": "Witch Hat House",
+    "fr": "Maison chapeau de sorcière"
+  }
+});
